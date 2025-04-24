@@ -1,4 +1,4 @@
-import '../components/Button.dart';
+import 'components/button.dart';
 import 'package:flutter/material.dart';
 // Assuming the login page is in 'home.dart'
 

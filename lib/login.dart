@@ -1,9 +1,9 @@
 import './register.dart';
 import './password.dart';
-import 'auth_service.dart';
+import 'services/auth_service.dart';
 import 'package:task/homepage.dart';
 import 'package:flutter/material.dart';
-import 'package:task/components/Button.dart';
+import 'package:task/components/button.dart';
 import 'package:task/utils/input_styles.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

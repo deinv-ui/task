@@ -1,6 +1,6 @@
-import 'auth_service.dart';
-import 'components/Button.dart';
+import 'components/button.dart';
 import 'package:task/login.dart';
+import 'services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:task/utils/input_styles.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -9,6 +9,7 @@ class Register extends StatefulWidget {
   const Register({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _RegisterState createState() => _RegisterState();
 }
 

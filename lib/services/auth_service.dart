@@ -14,20 +14,16 @@ class AuthService {
 
     final response = await http.post(
       url,
-      body: json.encode({
-        'email': email,
-        'password': password,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      body: json.encode({'email': email, 'password': password}),
+      headers: {'Content-Type': 'application/json'},
     );
 
     if (response.statusCode == 200) {
       final responseData = json.decode(response.body);
-      final token = responseData['token'];  // ReqRes returns a token on success
+      final token = responseData['token']; // ReqRes returns a token on success
       if (token != null) {
         await _secureStorage.write(key: 'token', value: token);
+        await _secureStorage.write(key: 'userId', value: '2');
         return true;
       }
     }
@@ -41,20 +37,16 @@ class AuthService {
 
     final response = await http.post(
       url,
-      body: json.encode({
-        'email': email,
-        'password': password,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      body: json.encode({'email': email, 'password': password}),
+      headers: {'Content-Type': 'application/json'},
     );
 
     if (response.statusCode == 200) {
       final responseData = json.decode(response.body);
-      final token = responseData['token'];  // ReqRes returns a token on success
+      final token = responseData['token']; // ReqRes returns a token on success
       if (token != null) {
         await _secureStorage.write(key: 'token', value: token);
+        await _secureStorage.write(key: 'userId', value: '2');
         return true;
       }
     }
