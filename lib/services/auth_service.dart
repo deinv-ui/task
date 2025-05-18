@@ -23,7 +23,7 @@ class AuthService {
       final token = responseData['token']; // ReqRes returns a token on success
       if (token != null) {
         await _secureStorage.write(key: 'token', value: token);
-        await _secureStorage.write(key: 'userId', value: '2');
+        await _secureStorage.write(key: 'userId', value: '4');
         return true;
       }
     }

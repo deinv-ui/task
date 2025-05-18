@@ -49,7 +49,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
 }
 
 class _AnimatedAddButton extends StatefulWidget {
-  const _AnimatedAddButton({super.key});
+  const _AnimatedAddButton();
 
   @override
   State<_AnimatedAddButton> createState() => _AnimatedAddButtonState();
